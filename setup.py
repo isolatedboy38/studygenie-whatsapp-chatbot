@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Load environment variables
 load_dotenv()
 
-BASE_URL = 'https://isolatedboy38.pythonanywhere.com/'
+BASE_URL = 'https://main--studygenie.netlify.app'
 
 # Your Account Sid and Auth Token from twilio.com/console
 account_sid = os.getenv('ACCOUNT_SID')
