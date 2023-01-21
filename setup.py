@@ -16,6 +16,11 @@ account_sid = os.getenv('ACCOUNT_SID')
 auth_token = os.getenv('AUTH_TOKEN')
 client = Client(account_sid, auth_token)
 
+@app.route('/')
+def home():
+    return '<p>Hey there, Welcome</p>'
+
+
 @app.route('/aws/<name>')
 def aws(name):
     return send_from_directory(directory='Files/aws', path=name, as_attachment=True)
