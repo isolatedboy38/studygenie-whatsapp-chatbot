@@ -114,4 +114,4 @@ def aws_send_pdf(to, file_list, sub):
     return message.sid
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(host="0.0.0.0",port=5000)
