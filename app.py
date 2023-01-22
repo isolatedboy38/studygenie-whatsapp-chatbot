@@ -73,37 +73,37 @@ def bot():
                 )
         responded=True
     
-     elif 'aws' in incoming_msg:
+    elif 'aws' in incoming_msg:
         aws1 = os.listdir('Files/aws/')
         aws_send_pdf(to=phone_number, file_list=aws1, sub='aws')
         responded=True
         
-     elif 'adhoc' in incoming_msg:
+    elif 'adhoc' in incoming_msg:
         adhoc1 = os.listdir('Files/adhoc/')
         aws_send_pdf(to=phone_number, file_list=adhoc1, sub='adhoc')
         responded=True
         
-     elif 'scm' in incoming_msg:
+    elif 'scm' in incoming_msg:
         scm1 = os.listdir('Files/scm/')
         aws_send_pdf(to=phone_number, file_list=scm1, sub='scm')
         responded=True
         
-     elif 'dm' in incoming_msg:
+    elif 'dm' in incoming_msg:
         dm1 = os.listdir('Files/dm/')
         aws_send_pdf(to=phone_number, file_list=dm1, sub='dm')
         responded=True
         
-     elif 'uml' in incoming_msg:
+    elif 'uml' in incoming_msg:
         uml1 = os.listdir('Files/aws/')
         aws_send_pdf(to=phone_number, file_list=uml1, sub='uml')
         responded=True
 
-     elif 'erp' in incoming_msg:
+    elif 'erp' in incoming_msg:
         erp1 = os.listdir('Files/erp/')
         aws_send_pdf(to=phone_number, file_list=erp1, sub='erp')
         responded=True
         
-     else:
+    else:
         msg.body('....:/')
     return str(resp)
 
