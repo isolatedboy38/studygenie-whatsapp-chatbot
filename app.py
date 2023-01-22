@@ -12,8 +12,8 @@ load_dotenv()
 BASE_URL = 'https://studygenie.onrender.com'
 
 # Your Account Sid and Auth Token from twilio.com/console
-account_sid = 'AC532f34b4775e3ca613e2e7284194235d'
-auth_token = 'c2be302f838ae7f4e723e6d74f5ad4fc'
+account_sid = os.getenv('ACCOUNT_SID')
+auth_token = os.getenv('AUTH_TOKEN')
 client = Client(account_sid, auth_token)
 
 @app.route('/')
